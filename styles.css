@@ -1,0 +1,481 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+}
+
+aside {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+aside header {
+    margin-bottom: 20px;
+}
+
+header img.logo {
+    height: 200px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.i_container {
+    position: relative;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.i_container img {
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em; /* Increase font size */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+    /* background-color: rgba(0, 0, 0, 0.5); Add a semi-transparent background for better contrast */
+    padding: 10px 20px; /* Add padding around the text */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+nav ul {
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover{
+    color: #2ead94; 
+    transition: all .1s ease;
+}
+
+address {
+    text-align: left;
+    font-style: normal;
+    margin: 20px 0;
+}
+
+.social-media {
+    text-align: left;
+}
+
+.social-media a {
+    display: flex;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.social-media :hover{
+    filter: opacity(0.6) drop-shadow(0 0 0 #2ead94);
+    transition: all .1s ease;
+}
+
+main {
+    flex: 1;
+    margin-left: 290px; /* Adjusted to account for the fixed aside */
+    background-color: #fff;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0;
+}
+
+.menu {
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu article {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #eee;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.menu article:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); 
+    transition: all .5s ease;
+}
+
+.menu article img {
+    padding: 20px;
+    height: 250px;
+    max-width: 250px;
+}
+
+.menu h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.info {
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info article {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #eee;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.info article:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5); 
+    transition: all .5s ease;
+}
+
+.info article img {
+    padding: 20px;
+    height: 250px;
+    max-width: 250px;
+}
+.info h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 10px;
+}
+
+#footer {
+    height: 500px;
+    width: 100%;
+    background-color: #0f6050;
+}
+
+.centered2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5em; /* Increase font size */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+    /* background-color: rgba(0, 0, 0, 0.5); Add a semi-transparent background for better contrast */
+    padding: 10px 20px; /* Add padding around the text */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+#r_foot {
+    height: 130px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: relative; /* Ensure position is relative if using absolute positioning inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#r_foot p {
+    margin: 0; /* Remove default margins */
+}
+
+#r_foot hr {
+    width: 80%; /* Adjust width as needed */
+    border: 1px solid white; /* Ensure the line is visible */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+/* Information section on the menu */
+
+#medium {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catering-section {
+    display: flex;
+    background-color: #138a72;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 80%;
+    width: 100%;
+}
+
+.text-content {
+    flex: 3;
+    padding: 40px 20px;
+    color: white;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+a.button {
+    padding: 6px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #0f6050;
+    background-color: #d0ff00;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: #c0e000;
+}
+
+.image-content {
+    flex: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    aside header {
+        text-align: center;
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default */
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul.active {
+        display: block; /* Show menu when active */
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        color: #333;
+        border-bottom: 1px solid #eee;
+    }
+
+    nav ul li a:hover {
+        background-color: #2ead94;
+        color: #fff;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #2ead94;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        font-size: 1.2em;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .menu-toggle:hover {
+        background-color: #0f6050;
+    }
+
+    main {
+        margin-left: 0; /* Remove the margin for the sidebar */
+    }
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%; /* Full width */
+        height: auto;
+        position: static; /* Not fixed */
+        padding: 0; /* Remove padding */
+        box-sizing: border-box;
+    }
+
+    aside header {
+        text-align: center;
+    }
+
+    /* Navigation adjustments */
+    nav ul {
+        list-style: none; /* Remove bullets */
+        padding: 0;
+        margin: 0; /* Remove any margins */
+        width: 100%; /* Full width */
+        box-sizing: border-box;
+    }
+
+    nav ul li {
+        margin: 0; /* Remove default margins */
+        padding: 0; /* Remove padding */
+        width: 100%; /* Ensure full width */
+        box-sizing: border-box; /* Ensure padding is included within the width */
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        width: 100%; /* Full width */
+        text-align: center;
+        background-color: #fff;
+        color: #333;
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box; /* Ensure padding fits within width */
+    }
+
+    nav ul li a:hover {
+        background-color: #2ead94;
+        color: #fff;
+    }
+
+    address {
+        display: none; /* Hide the address on mobile */
+    }
+
+    .image-content {
+        display: none;
+    }
+
+    .social-media {
+        display: none; /* Hidden by default */
+    }
+
+    .social-media.active {
+        display: flex; /* Show when active */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul.active {
+        display: block; /* Ensure the nav ul is shown when active */
+    }
+
+    /* Menu toggle button */
+    .menu-toggle {
+        display: block;
+        background-color: #2ead94;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        font-size: 1.2em;
+        cursor: pointer;
+        width: 100%; /* Ensure the toggle button is full width */
+    }
+
+    .menu-toggle:hover {
+        background-color: #0f6050;
+    }
+
+    .menu article {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #eee;
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden; /* Ensure content stays within the article */
+    }
+
+    /* Image styling within the menu articles */
+    .menu article img {
+        width: 80%; /* Ensure the image takes full width of its container */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 80%; /* Ensure the image doesn’t overflow */
+        object-fit: contain; /* Ensure the image fits cleanly inside the article */
+        display: block; /* Remove any extra inline spacing */
+        margin: 0 auto; /* Center the image */
+    }
+
+    .centered{
+        font-size: 0.5em;;
+    }
+
+    .centered{
+        font-size: 0.5em;;
+    }
+
+    main {
+        margin-left: 0; /* Remove margin */
+        padding: 0; /* Remove padding */
+        width: 100%; /* Ensure full width */
+    }
+
+    #footer {
+        height: max-content; /* Adjust height for mobile */
+        background-color: #0f6050; /* Keep the background color */
+    }
+}
